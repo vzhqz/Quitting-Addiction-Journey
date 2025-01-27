@@ -110,18 +110,19 @@ h1 {
     background-color: #e60000;
 }
 
-@media (max-width: 321px) {
+@media (max-width: 451px) {
     h1 {
         text-align: center;
         font-size: 30px;
+        margin-top: 25px;
     }
 
     #daysList {
-        max-width: 300px;
+        max-width: 375px;
     }
 
     #addDay {
         margin-bottom: 30px;
-        padding: 10px 80px;
+        padding: 10px 85px;
     }
 }
