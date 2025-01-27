@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    margin: 20px;
+}
+
+#addDay {
+    padding: 10px 90px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    outline: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: .15s ease;
+}
+
+#addDay:hover {
+    background-color: #f6f6f6;
+}
+
+#addDay:active {
+    background-color: #e8e8e8;
+}
+
+#daysList {
+    width: 100%;
+    text-align: center;
+    max-width: 400px;
+}
+
+#daysList li {
+    list-style: none;
+    font-size: 1.4em;
+    background-color: rgb(222, 222, 222);
+    padding: 10px;
+    text-align: left;
+    border-radius: 10px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.doneBtn {
+    appearance: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#daysList li div {
+    display: flex;
+    flex-direction: row;
+}
+
+.doneBtn::before {
+    content: "\f00d";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+.doneBtn:checked::before {
+    content: "\f00c";
+}
+
+.doneBtn:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+.doneBtn:active {
+    background-color: rgb(235, 235, 235);
+}
+
+
+.deleteBtn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.deleteBtn:hover {
+    background-color: #ff1a1a;
+}
+
+.deleteBtn:active {
+    background-color: #e60000;
+}
+
+@media (max-width: 321px) {
+    h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    #daysList {
+        max-width: 300px;
+    }
+
+    #addDay {
+        margin-bottom: 30px;
+        padding: 10px 80px;
+    }
+}
