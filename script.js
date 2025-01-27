@@ -1,7 +1,7 @@
 const addDayBtn = document.getElementById("addDay");
 const daysList = document.getElementById("daysList");
 let dayCount = 0;
-let startDate = new Date('2025-01-23'); // Starting date for Day 1
+let startDate = new Date('2025-01-28'); // Starting date for Day 1
 
 loadDays();
 
